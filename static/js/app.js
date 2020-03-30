@@ -36,7 +36,7 @@ function getPlot(id) {
             y: otu_id,
             text: labels,
             marker: {
-              color: 'rgb(142,124,195)'},
+              color: 'rgb(0,0,255)'},
             type:"bar",
             orientation: "h",
         };
@@ -51,9 +51,9 @@ function getPlot(id) {
                 tickmode:"linear",
             },
             margin: {
-                l: 100,
-                r: 100,
-                t: 100,
+                l: 80,
+                r: 80,
+                t: 80,
                 b: 30
             }
         };
@@ -61,8 +61,7 @@ function getPlot(id) {
         // create the bar plot
         Plotly.newPlot("bar", data, layout);
   
-        //console.log(`ID: ${samples.otu_ids}`)
-      
+          
         // The bubble chart
         var trace1 = {
             x: samples.otu_ids,
