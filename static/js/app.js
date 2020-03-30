@@ -1,6 +1,6 @@
 // Use D3 fetch to read the JSON file
 
-// Creating function for Data plotting (Bar, gauge, bubble)
+// Creating function for Data plotting (Bar, bubble)
 function getPlot(id) {
     // getting data from the json file
     d3.json("./data/samples.json").then((data)=> {
